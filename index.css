@@ -1,0 +1,95 @@
+body {
+    background-color: rgb(239, 222, 235);
+    text-align: center;
+    background: url(https://th.bing.com/th/id/R.042aefaccd947a8c07f36b11f228ba2e?rik=SniIYGiiYj7Xgg&pid=ImgRaw&r=0);
+    background-position: top left;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  h1 {
+    animation: fadeIn 2s ease-in-out;
+    color: rgb(195, 55, 79);
+  }
+  .game-container {
+    padding: 20px;
+    background-color: rgb(236, 242, 242);
+    max-width: 600px;
+    height: 400px;
+    margin: auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  h1:hover {
+    animation: bounce 2s ease infinite;
+    cursor: pointer;
+  }
+
+  .letter {
+    display: inline-block;
+    height: 10px;
+    width: 40px;
+    margin: 5px;
+    margin-bottom: 20px;
+    color: rgb(230, 95, 176);
+    border-bottom: 2px solid rgb(84, 9, 9);
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .keyboard {
+    padding: 20px;
+  }
+  .keyboard button {
+    width: 40px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+  }
+  .keyboard button:hover {
+    width: 45px;
+    color: rgb(241, 182, 192);
+    color: white;
+  }
+  .attempts {
+    font-weight: bold;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: rgb(221, 18, 86);
+  }
+  .results {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(195, 87, 145);
+  }
